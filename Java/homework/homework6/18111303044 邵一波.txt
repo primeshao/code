@@ -1,0 +1,309 @@
+1.设计人、学生、教师三个类，设计类之间的继承关系，注意各属性、方法的访问权限。在一个测试类（TestDemo），在测试类中设计一个函数talk，该函数可以接收学生和教师的对象，根据接收对象的不同执行不同的操作。
+人的属性有：姓名、性别、身高、年龄；方法有：各属性的获取、设置，走路，说话
+学生的属性有：学号、姓名、性别、身高、年龄、专业、总学分；方法有：各属性的获取、设置，走路，说话，上课，考试。
+教师的属性有：职工号、姓名、性别、身高、年龄、专业、所在学院；方法有：各属性的获取、设置，走路，说话，上课，出试卷
+文件 TestDemo.java
+public class TestDemo {
+	public static void main(String args[]) {
+		Student Jack=new Student();
+		Jack.setName("Jack");
+		Jack.setSex('M');
+		Jack.setHeight(1.85);
+		Jack.setAge(19);
+		Jack.setStudentNumber(1234567);
+		Jack.setMajor("computer");
+		Jack.setTotalCredits(2.5);
+		Teacher Alice=new Teacher();
+		Alice.setName("Alice");
+		Alice.setSex('F');
+		Alice.setHeight(1.65);
+		Alice.setAge(29);
+		Alice.setJobNumber(7654321);
+		Alice.setCollege("college of computer");
+		TestDemo.talk(Jack);
+		System.out.println();
+		TestDemo.talk(Alice);
+	}
+	static void talk(Student s) {
+		System.out.println(s.getName()+" "+s.getSex()+" "+s.getHeight()+" "+s.getAge());
+		System.out.println(s.getStudentNumber()+" "+s.getMajor());
+		System.out.println("ToltalCredits:"+s.getToltalCredits());
+		s.walk();
+		s.speak();
+		s.study();
+		s.test();
+	}
+	static void talk(Teacher t) {
+		System.out.println(t.getName()+" "+t.getSex()+" "+t.getHeight()+" "+t.getAge());
+		System.out.println(t.getJobNumber()+" "+t.getCollege());
+		t.walk();
+		t.speak();
+		t.teach();
+		t.test();
+	}
+}
+class People{
+	String name;
+	char sex;
+	double height;
+	int age;
+	void setName(String n) {
+		name=n;
+	}
+	void setSex(char s) {
+		sex=s;
+	}
+	void setHeight(double h) {
+		height=h;
+	}
+	void setAge(int a) {
+		age=a;
+	}
+	String getName() {
+		return name;
+	}
+	char getSex() {
+		return sex;
+	}
+	double getHeight() {
+		return height;
+	}
+	int getAge() {
+		return age;
+	}
+	void walk() {
+		System.out.println("walk as people");
+	}
+	void speak() {
+		System.out.println("la la la la la la...");
+	}
+}
+class Student extends People{
+	long studentNumber;
+	String major;
+	double totalCredits;
+	void setStudentNumber(long number) {
+		studentNumber=number;
+	}
+	void setMajor(String m) {
+		major=m;
+	}
+	void setTotalCredits(double c) {
+		totalCredits=c;
+	}
+	long getStudentNumber() {
+		return studentNumber;
+	}
+	String getMajor() {
+		return major;
+	}
+	double getToltalCredits() {
+		return totalCredits;
+	}
+	void walk() {
+		System.out.println("walk as students");
+	}
+	void speak() {
+		System.out.println("Hi,I am a student.");
+	}
+	void study() {
+		System.out.println("I love study.");
+	}	
+	void test() {
+		System.out.println("I'm going to test.");
+	}
+}
+class Teacher extends People{
+	long jobNumber;
+	String college;
+	void setJobNumber(long number) {
+		jobNumber=number;
+	}
+	void setCollege(String c) {
+		college=c;
+	}
+	long getJobNumber() {
+		return jobNumber;
+	}
+	String getCollege() {
+		return college;
+	}
+	void walk() {
+		System.out.println("walk as teachers");
+	}
+	void speak() {
+		System.out.println("Hello,I am a teachar.");
+	}	
+	void teach() {
+		System.out.println("I like teach students.");
+	}
+	void test() {
+		System.out.println("I'm writing out my examination paper.");
+	}
+}
+2.定义一个汽车类Car
+属性有：车辆当前位置（对应于二维平面的横、纵坐标），商标（品牌），当前速度，等等（可自行增加其他属性）；
+方法有：前进，后退，左拐弯，右转弯。定义一个测试类CarDemo，测试汽车经过前进/后退/拐弯等操作后，车辆位置的变化。
+其他属性、方法，可自行添加。
+进一步完善汽车类Car；编写小汽车（MyCar）和卡车（Truck）两个类，继承Car类；小汽车重写加速、减速方法，卡车添加载重量属性，重写加速、减速方法。
+编写一个主类CarDemo进行相关测试。
+文件 CarDemo.java
+public class CarDemo {
+	public static void main(String args[]) {
+		//Car testing...
+		System.out.println("Car testing...");
+		MyCar benz=new MyCar(2,3);
+		benz.setBrand("benz");
+		benz.showBrand();
+		benz.setSpeed(110);
+		benz.showSpeed();
+		benz.speedUp();
+		benz.showSpeed();
+		benz.speedDown();
+		benz.showSpeed();
+		System.out.println("coordinates:"+benz.getCoordinates());
+		benz.goForward(5);
+		benz.turnLeft();
+		benz.goForward(2);
+		benz.turnRight();
+		benz.goBack(6);
+		benz.turnRight();
+		benz.goForward(3);
+		//Truck testing...
+		System.out.println("Truck testing...");
+		Truck yiqi=new Truck(4,7);
+		yiqi.setBrand("yiqi");
+		yiqi.showBrand();
+		yiqi.setWeight(12000.5);
+		yiqi.showWeight();
+		yiqi.setSpeed(50);
+		yiqi.showSpeed();
+		yiqi.speedUp();
+		yiqi.showSpeed();
+		yiqi.speedDown();
+		yiqi.showSpeed();
+		System.out.println("coordinates:"+yiqi.getCoordinates());
+		yiqi.goBack(3);
+		yiqi.turnLeft();
+		yiqi.goForward(2);
+		yiqi.turnRight();
+		yiqi.goForward(1);
+		yiqi.turnLeft();
+		yiqi.goForward(1);
+		}
+}
+class Car{
+	private int x;
+	private int y;
+	Car(int x,int y){
+		this.x=x;
+		this.y=y;
+	}
+	private int controller=0;
+	private String brand;
+	double speed;
+	void turnRight() {
+		System.out.println("turn right");
+		controller--;
+		if(controller<0) {
+			controller+=4;
+		}
+		controller%=4;
+	}
+	void turnLeft() {
+		System.out.println("turn left");
+		controller++;
+		controller%=4;
+	}
+	void goForward(int i) {
+		switch(controller) {
+		case 0: y+=i;break;
+		case 1: x-=i;break;
+		case 2: y-=i;break;
+		case 3: x+=i;break;	
+		}
+		System.out.println("Forward:"+i+" coordinates:"+getCoordinates());
+	}
+	void goBack(int i) {
+		switch(controller) {
+		case 0: y-=i;break;
+		case 1: x+=i;break;
+		case 2: y+=i;break;
+		case 3: x-=i;break;	
+		}
+		System.out.println("Back:"+i+" coordinates:"+getCoordinates());
+	}
+	void setBrand(String b) {
+		brand=b;
+	}
+	void showBrand() {
+		System.out.println(getBrand()+" car");
+	}
+	void setSpeed(double s) {
+		speed=s;
+	}
+	void speedUp() {
+		speed++;
+	}
+	void speedDown() {
+		speed--;
+	}
+	int getX() {
+		return x;
+	}
+	int getY() {
+		return y;
+	}
+	String getBrand() {
+		return brand;
+	}
+	double getSpeed() {
+		return speed;
+	}
+	void showSpeed() {
+		System.out.println("Now speed:"+getSpeed());
+	}
+	String getCoordinates() {
+		return "("+getX()+","+getY()+")";
+	}
+}
+class MyCar extends Car{
+	MyCar(int x,int y){
+		super(x,y);
+	}
+	void speedUp() {
+		System.out.print("speed up! ");
+		speed+=5;
+	}
+	void speedDown() {
+		System.out.print("speed down! ");
+		speed-=5;
+	}
+}
+class Truck extends Car{
+	Truck(int x,int y){
+		super(x,y);
+	}
+	double weight;
+	void setWeight(double w) {
+		weight=w;
+	}
+	double getWeight() {
+		return weight;
+	}
+	void showWeight() {
+		System.out.println("Weight:"+getWeight());
+	}
+	void speedUp() {
+		System.out.print("speed up! ");
+		speed+=0.5;
+	}
+	void speedDown() {
+		System.out.print("speed down! ");
+		speed-=0.5;
+	}
+	void showBrand() {
+		System.out.println(getBrand()+" truck");
+	}
+}
+

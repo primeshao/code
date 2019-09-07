@@ -1,0 +1,278 @@
+实验5
+1．课本P110第4题。
+文件 Test.java
+public class Test {
+	public static void main(String args[]) {
+		CPU cpu=new CPU();
+		cpu.setSpeed(2200);
+		HardDisk disk=new HardDisk();
+		disk.setAmount(200);
+		PC pc=new PC();
+		pc.setCPU(cpu);
+		pc.setHardDisk(disk);
+		pc.show();
+	}
+	
+}class PC {
+	CPU cpu;
+	HardDisk HD;
+	void setCPU(CPU c) {
+		cpu=c;
+	}
+	void setHardDisk(HardDisk h){
+		HD=h;
+	}
+	void show() {
+		System.out.println("CPU speed:"+cpu.getSpeed());
+		System.out.println("HardDisk amount:"+HD.getAmount());
+	}
+
+}
+class CPU {
+	int speed;
+	void setSpeed(int s) {
+		speed=s;
+	}
+	int getSpeed(){
+		return speed;
+	}
+}
+class HardDisk {
+	int mount;
+	void setAmount(int m) {
+		mount=m;
+	}
+	int getAmount(){
+		return mount;
+	}
+}
+2．设计一个表示分数的类Fraction，构造一个a/b的分数，并实现分数的四则运算。这个类用两个int类型的变量分别表示分子和分母。构造函数有：
+Fraction();
+Fraction(int a, int b);
+这个类要提供以下的功能：
+double toDouble();将分数转换为double
+Fraction add(Fraction r);将自己的分数和r的分数相加，产生一个新的Fraction的对象。
+Fraction plus(Fraction r);将自己的分数和r的分数相减，产生一个新的Fraction的对象。
+Fraction multiply(Fraction r);将自己的分数和r的分数相乘，产生一个新的Fraction的对象。
+Fraction divide(Fraction r);将自己的分数和r的分数相除，产生一个新的Fraction的对象。
+void print();将自己以“分子/分母”的形式输出到标准输出，并带有回车换行。如果分数是1/1，应该输出1。当分子大于分母时，不需要提出整数部分，即31/30是一个正确的输出。注意，在创建和做完运算后应该化简分数为最简形式。如2/4应该被化简为1/2。
+编写一个测试类FractionTest，实现分数的输入、输出、四则运算。
+文件 FractionTest.java
+import java.util.*;
+public class FractionTest {
+	public static void main(String args[]) {
+		Scanner reader = new Scanner(System.in);
+		System.out.print("numerator1:");
+		int temp=reader.nextInt();
+		System.out.print("denominator1:");
+		Fraction f1=new Fraction(temp,reader.nextInt());
+		System.out.print("numerator2:");
+		temp=reader.nextInt();
+		System.out.print("denominator2:");
+		Fraction f2=new Fraction(temp,reader.nextInt());
+		Fraction f3=new Fraction();
+		System.out.print("f1=");
+		f1.print_double();
+		System.out.print("f2=");
+		f2.print_double();
+		f3=f1.add(f2);
+		System.out.print(f1.a+"/"+f1.b+" + "+f2.a+"/"+f2.b+"=");
+		f3.print();
+		f3=f1.plus(f2);
+		System.out.print(f1.a+"/"+f1.b+" - "+f2.a+"/"+f2.b+"=");
+		f3.print();
+		f3=f1.multiply(f2);
+		System.out.print("("+f1.a+"/"+f1.b+")"+" * "+"("+f2.a+"/"+f2.b+")"+"=");
+		f3.print();
+		f3=f1.divide(f2);
+		System.out.print("("+f1.a+"/"+f1.b+")"+" / "+"("+f2.a+"/"+f2.b+")"+"=");
+		f3.print();
+	}
+}
+class Fraction {
+	int a;
+	int b;
+	Fraction(){
+		a=0;
+		b=0;
+	}
+	Fraction(int a, int b){
+		int i=a;
+		int j=b;
+		if(i!=0&&j!=0){
+			if(i<j) {
+				int c=i;
+				i=j;
+				j=c;
+			}
+			int r=i%j;
+			while(r!=0) {
+				i=j;
+				j=r;
+				r=i%j;
+			}
+			i=a/j;
+			j=b/j;
+			if(j<=0) {
+				i=-i;
+				j=-j;
+			}
+		}
+		this.a=i;
+		this.b=j;
+	}
+	double toDouble() {
+		return (a*1.0/b);
+	}
+	Fraction add(Fraction r) {
+		if(b==0||r.b==0){
+			return new Fraction(0,0); 
+		}
+		else{
+			return new Fraction(a*r.b+r.a*b,b*r.b); 
+		}
+	}
+	Fraction plus(Fraction r) {
+		if(b==0||r.b==0){
+			return new Fraction(0,0); 
+		}
+		else{
+			return new Fraction(a*r.b-r.a*b,b*r.b);
+		}
+	}
+	Fraction multiply(Fraction r) {
+		if(b==0||r.b==0){
+			return new Fraction(0,0); 
+		}
+		else{
+			return new Fraction(a*r.a,b*r.b);
+		}	
+	}
+	Fraction divide(Fraction r) {
+		if(b==0||r.b==0){
+			return new Fraction(0,0); 
+		}
+		else{
+			return new Fraction(a*r.b,b*r.a);
+		}	
+	}
+	
+	void print() {
+		if(this.b==0) {
+			System.out.println("error");		
+		}
+		else if(this.a==0) {
+			System.out.println("0");
+
+		}
+		else {
+			System.out.println(this.a+"/"+this.b);
+		}
+	}
+	void print_double() {
+		if(b==0) {
+			System.out.println("error");
+		}
+		else {
+			System.out.println(toDouble());
+		}
+
+	}
+}
+3．	定义一个时间类MyTime，实现时间（小时、分钟、秒）的输入、输出、相关计算、比较等功能。时间的计算包括但不限于：
+1）时间相加：从t1时刻经过t2时间后的时间；
+2）时间相减：t1时刻的t2时间之前的时间；（例如：10时34分之前50分钟的时间是什么）
+3）两个时间之间的间距：t1到t2之间有多长时间
+定义测试类MyTimeTest测试MyTime类的相关功能。
+文件 MyTimeTest.java
+import java.util.Scanner;
+public class MyTimeTest {
+	public static void main(String args[]) {
+		MyTime t1=new MyTime();
+		MyTime t2=new MyTime();
+		MyTime t3=new MyTime();
+		System.out.print("c1:");
+		t1.input(1);
+		System.out.print("c2:");
+		t2.input(0);
+		t3=t1.add(t2);
+		System.out.println(t2.output(0)+" after "+t1.output(1)+" is "+t3.output(1));
+		t3=t1.reduce(t2);
+		System.out.println(t2.output(0)+" before "+t1.output(1)+" is "+t3.output(1));
+		t3=MyTime.Spacing(t1,t2);
+		System.out.println("The time difference between "+t1.output(1)+" and "+t2.output(1)+" was "+t3.output(0));
+	}
+}
+class MyTime {
+	MyTime(){
+		
+	}
+	MyTime(int h,int m,int s,int judge){
+		TimeTransform(h,m,s,judge);
+	}
+	int hour=0;
+	int minute=0;
+	int second=0;
+	void TimeTransform(int h,int m,int s,int judge) {
+		if(s<0) {
+			m-=(s/(-60)+1);
+			s+=(60*(s/(-60)+1));
+		}
+		else if(s>=60) {
+			m+=(s/60);
+			s-=(60*(s/60));
+		}
+		if(m<0) {
+			h-=(m/(-60)+1);
+			m+=(60*(m/(-60)+1));
+		}
+		else if(m>=60) {
+			h+=(m/60);
+			m-=(60*(m/60));
+		}
+		if(judge==1) {
+			{
+				if(h<0) {
+					h=((h%(-24))+24);
+				}
+				else {
+					h=h%24;
+				}
+				
+			}
+			if(h==24) {
+				h=0;
+			}
+			
+		}
+		hour=h;
+		minute=m;
+		second=s;
+	}
+	void input(int judge) {
+		Scanner reader= new Scanner(System.in);
+		System.out.println("Input the hour,mintue and second,seprated by enter:");
+		TimeTransform(reader.nextInt(),reader.nextInt(),reader.nextInt(),judge);
+	}
+	String output(int judge) {
+		if(judge==1) {
+			return hour+":"+minute+":"+second;//e.g. 12:13:14
+		}
+		else return hour+"h"+minute+"m"+second+"s";//e.g. 12h13m14s
+	}
+	MyTime add(MyTime t) {
+		return new MyTime(hour+t.hour,minute+t.minute,second+t.second,1);
+	}
+	MyTime reduce(MyTime t) {
+		return new MyTime(hour-t.hour,minute-t.minute,second-t.second,1);
+	}
+	static MyTime Spacing(MyTime t1,MyTime t2) {
+		t2.TimeTransform(t2.hour,t2.minute,t2.second,1);
+		if(t1.hour>t2.hour) {
+			return new MyTime(t1.hour-t2.hour,t1.minute-t2.minute,t1.second-t2.second,0);
+		}
+		else {
+			return new MyTime(t2.hour-t1.hour,t2.minute-t1.minute,t2.second-t1.second,0);
+		}
+	}
+}

@@ -1,0 +1,6 @@
+User Number	User Name	Sex	Birthday		Email	
+15232548568	Tom		Male	2000-02-29	1145623547@qq.com	
+13655458456	Alice		Female	2001-03-31	1236547895@gmail.com	
+11536587453	Jack		Male	2000-01-02	jackjack@outlook.com	
+16601102158	Bob		Male	2000-02-01	bbb@hotmail.com	
+19965325485	Nancy		Female	2002-10-02	14532658452@firebox.com	

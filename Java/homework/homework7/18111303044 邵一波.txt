@@ -1,0 +1,151 @@
+1．请完成实验教材的上机实践5中的实验2。
+文件 SaveMoney.java
+public class SaveMoney {
+	public static void main(String Args[]) {
+		int amount=8000;
+		ConstructionBank bank1=new ConstructionBank();
+		bank1.savedMoney=amount;
+		bank1.year=8.236;
+		bank1.setInterestRate(0.035);
+		double interest1=bank1.computerInterest();
+		BankOfDalian bank2=new BankOfDalian();
+		bank2.savedMoney=amount;
+		bank2.year=8.236;
+		bank2.setInterestRate(0.035);
+		double interest2=bank2.computerInterest();
+		System.out.printf("There's %f yuan diffraence between the two Banks\n",interest2-interest1);
+		
+	}
+
+}
+文件 Bank.java
+public class Bank {
+	int savedMoney;
+	int year;
+	double interest;
+	double interestRate=0.29;
+	public double computerInterest() {
+		interest=year*interestRate*savedMoney;
+		return interest;
+	}
+	public void setInterestRate(double rate) {
+		interestRate=rate;
+	}
+}
+文件 ConstructionBank.java
+public class ConstructionBank extends Bank {
+	double year;
+	public double computerInterest() {
+		super.year=(int)year;
+		double r=year-(int)year;
+		int day=(int)(r*1000);
+		double yearInterest=super.computerInterest();
+		double dayInterest=day*0.0001*savedMoney;
+		interest=yearInterest+dayInterest;
+		System.out.printf("The intetest of %d yuan in Construction Bank for %d years and %d days:%f yuan\n",savedMoney,super.year,day,interest);
+		return interest;
+	}
+}
+文件 BankOfDalian.java
+public class BankOfDalian extends Bank {
+	double year;
+	public double computerInterest() {
+		super.year=(int)year;
+		double r=year-(int)year;
+		int day=(int)(r*1000);
+		double yearInterest=super.computerInterest();
+		double dayInterest=day*0.00012*savedMoney;
+		interest=yearInterest+dayInterest;
+		System.out.printf("The intetest of %d yuan in Bank of Dalian for %d years and %d days:%f yuan\n",savedMoney,super.year,day,interest);
+		return interest;
+	}
+}
+2．请完成实验教材的上机实践5中的实验3。
+文件 CompanySalary.java
+abstract class Employee{
+	public abstract double earnings();
+}
+class YearWorker extends Employee{
+	public double earnings() {
+		return 12000;
+	}
+}
+class MonthWorker extends Employee{
+	public double earnings() {
+		return 12*2300;
+	}
+}
+class WeekWorker extends Employee{
+	public double earnings() {
+		return 52*780;
+	}
+}
+class Company{
+	Employee employee[];
+	double Salaries=0;
+	Company(Employee employee[]){
+		this.employee=employee;
+	}
+	public double salariesPay() {
+		double salaries=0;
+		for(int i=0;i<employee.length;i++) {
+			salaries+=employee[i].earnings();
+		}
+		return salaries; 
+	}
+}
+public class CompanySalary {
+	public static void main(String args[]) {
+		Employee employee[]=new Employee[29];
+		for(int i=0;i<employee.length;i++) {
+			if(i%3==0)
+				employee[i]=new WeekWorker();
+			else if(i%3==1)
+				employee[i]=new MonthWorker();
+			else if(i%3==2)
+				employee[i]=new YearWorker();
+		}
+		Company company=new Company(employee);
+		System.out.println("Company payrool:"+company.salariesPay()+" yuan");
+	}
+
+}
+3．请完成教材P143至P144页中的编程题。
+文件 Application.java
+public class Application {
+	public static void main(String args[]) {
+		Simulator simulator=new Simulator();
+		simulator.playSound(new Dog());
+		simulator.playSound(new Cat());
+	}
+}
+文件 Simulator.java
+public class Simulator {
+	void playSound(Animal animal) {
+		System.out.print(animal.getAnimalName()+":");
+		animal.cry();
+	}
+}
+文件 Animal.java
+public  abstract class Animal {
+	public abstract void cry();
+	public abstract String getAnimalName();
+}
+文件 Cat.java
+public class Cat extends Animal {
+	public  void cry() {
+		System.out.println("meow!");
+	}
+	public  String getAnimalName() {
+		return "Cat";
+	}
+}
+文件 Dog.java
+public class Dog extends Animal {
+	public void cry() {
+		System.out.println("bark!");
+	}
+	public String getAnimalName() {
+		return "Dog";
+	}
+}

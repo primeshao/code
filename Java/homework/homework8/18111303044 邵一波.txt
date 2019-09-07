@@ -1,0 +1,188 @@
+1.体操比赛计算选手成绩的办法是去掉一个最高分和最低分后计算平均分，而学校考察一个班级的某科目的考试情况时，是计算全班同学的平均成绩。体操类Gymnastics和学校类School都实现了接口ComputerAverage。请编程实现并调试。成绩可以用数组存储。
+文件 PalyerDemo.java
+public class PalyerDemo {
+	public static void main(String args[]) {
+		Gymnastics class1=new Gymnastics();
+		School class2=new School();
+		System.out.println("School test:");
+		System.out.println("Average:"+class1.getAverage());
+		System.out.println("Gymnastics test:");
+		System.out.println("Average:"+class2.getAverage());
+	}
+
+}
+interface ComputerAverage{
+	double getAverage();
+}
+class Gymnastics implements ComputerAverage{
+	double score[]= {72,98,45,76,12,56,95,66.8,44,77};
+	public double getAverage() {
+		double sum=0.0;
+		double max=score[0];
+		double min=score[0];
+		for(int i=0;i<score.length;i++) {
+			sum+=score[i];
+			if(score[i]>max) {
+				max=score[i];
+			}
+			if(score[i]<min) {
+				min=score[i];
+			}
+		}
+		return (sum-max-min)/(score.length-2);
+	}
+}
+class School implements ComputerAverage{
+	double score[]= {72,98,45,76,12,56,95,66.8,44,77};
+	public double getAverage() {
+		double sum=0.0;
+		for(int i=0;i<score.length;i++) {
+			sum+=score[i];	
+		}
+		return sum/score.length;
+	}
+}
+2.货车要装载一批货物，整批货物的的总件数大于100件。货物由三种商品组成：电视、计算机和洗衣机。卡车需要计算出整批货物的重量。
+（1）设计一个接口ComputerWeight，该接口中有一个方法：public double computrWeight();
+（2）有三个实现该接口的类：Television、Computer和WashMachine。这三个类通过实现接口ComputerWeight给出自重。
+（3）有一个Truck类，该类用ComputerWeight接口类型的数组作为成员(Truck类面向接口)，那么该数组的单元可以存放Television、Computer和WashMachine对象的引用。编程实现输出Truck对象所装载的货物的总重量。
+文件 TruckDemo.java
+import java.util.*;
+public class TruckDemo {
+	public static void main(String args[]) {
+		Truck dongfeng=new Truck();
+		dongfeng.setGoods();
+		System.out.println("The total weight for the foods set on Dongfeng is "+dongfeng.getTotalWeight()+" kg.");
+		
+		
+	}
+
+}
+interface ComputerWeight{
+	double computrWeight();
+}
+class Television implements ComputerWeight{
+	public double computrWeight() {
+		return 10.0;
+	}
+}
+class Computer implements ComputerWeight{
+	public double computrWeight() {
+		return 15.5;
+	}
+}
+class WashMachine implements ComputerWeight{
+	public double computrWeight() {
+		return 25.5;
+	}
+}
+class Truck {
+	ComputerWeight goods[];
+	int amount=0;
+	void setGoods() {
+		Scanner reader=new Scanner(System.in);
+		System.out.print("How many goods do you want to express?");
+		amount=reader.nextInt();
+		goods=new ComputerWeight[amount];
+		for(int i=0;i<goods.length;i++) {
+			if(i%3==0) {
+				goods[i]=new Television();
+			}
+			else if(i%3==1) {
+				goods[i]=new Computer();
+			}
+			else {
+				goods[i]=new WashMachine();
+			}
+		}
+	}
+	double getTotalWeight() {
+		double totalWeight=0.0;
+		for(int i=0;i<amount;i++) {
+			totalWeight+=goods[i].computrWeight();
+		}
+		return totalWeight;
+	}
+}
+3.车站检查危险品的设备，如果发现化危险品会发出警告，编程模拟设备发现危险品。
+（1）编写一个Exception的子类DangerException，该类可以可以创建异常对象，该异常对象调用toShow（）方法输出“属于危险品”。
+（2）编写一个Machine类，该类的方法checkBag（Goods goods）当发现参数goods是危险品时（goods的isDanger属性是true）将抛出DangerException异常。
+（3）程序在主类的main（）方法中的try-catch语句的try部分让Maichine类的实例调用checkBag（Goods goods）方法，如果发现危险品就在try-catch语句的catch部分处理危险品。
+文件 StationCheck.java
+public class StationCheck {
+	public static void main(String args[]) {
+		Goods good1=new Goods(false);
+		Goods good2=new Goods(true);
+		Machine myMachine=new Machine();
+		try {
+			System.out.println("Chack good1...");
+			myMachine.checkBag(good1);
+			System.out.println("Chack good2...");
+			myMachine.checkBag(good2);
+		}
+		catch(DangerException d){
+			d.toShow();
+		}
+	}
+}
+class DangerException extends Exception {
+	public void toShow() {
+		System.out.println("This is a dangerous article!!!");
+	}
+}
+class Goods{	
+	boolean isDanger;
+	Goods(boolean b){
+		isDanger=b;
+	}
+}
+class Machine{
+	public void checkBag(Goods goods) throws DangerException{
+		if(goods.isDanger==true) {
+			throw new DangerException();
+		}
+		
+	}
+}
+4.课本P160第四题。
+文件  Application.java
+public class Application {
+	public static void main(String args[]) {
+		Simulator simulator=new Simulator();
+		simulator.playSound(new Dog());
+		simulator.playSound(new Cat());
+	}
+}
+文件 Simulator.java
+public class Simulator {
+	void playSound(Animal animal) {
+		System.out.print(animal.getAnimalName()+":");
+		animal.cry();
+	}
+}
+文件 Animal.java
+public interface Animal {
+	void cry();
+	String getAnimalName();
+}
+文件 Cat.java
+public class Cat implements Animal {
+	public  void cry() {
+		System.out.println("meow!");
+	}
+	public String getAnimalName() {
+		return "Cat";
+	}
+
+}
+文件 Dog.java
+public class Dog implements Animal {
+	public void cry() {
+		System.out.println("bark!");
+	}
+	public String getAnimalName() {
+		return "Dog";
+	}
+
+}
+
