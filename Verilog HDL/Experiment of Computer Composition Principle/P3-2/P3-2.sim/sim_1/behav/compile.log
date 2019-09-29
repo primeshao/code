@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P3-2/P3-2.srcs/sources_1/new/parallel_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module parallel_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P3-2/P3-2.srcs/sim_1/new/test_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P3-2/P3-2.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
