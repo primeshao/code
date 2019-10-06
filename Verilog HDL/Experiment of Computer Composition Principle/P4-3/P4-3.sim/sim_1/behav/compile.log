@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P4-3/P4-3.srcs/sources_1/new/decoder3_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P4-3/P4-3.srcs/sim_1/new/test_decoder3_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_decoder3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P4-3/P4-3.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

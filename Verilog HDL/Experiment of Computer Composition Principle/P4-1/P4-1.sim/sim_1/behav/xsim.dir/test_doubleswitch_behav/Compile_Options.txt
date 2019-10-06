@@ -1,0 +1,1 @@
+-wto "fa8278a277fe4783a3eca3e30752e474" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "test_doubleswitch_behav" "xil_defaultlib.test_doubleswitch" "xil_defaultlib.glbl" -log "elaborate.log" 

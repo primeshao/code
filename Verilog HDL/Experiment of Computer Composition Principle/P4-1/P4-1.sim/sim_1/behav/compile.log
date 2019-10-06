@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P4-1/P4-1.srcs/sources_1/new/doubleswitch_dataflow.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module doubleswitch_dataflow
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P4-1/P4-1.srcs/sim_1/new/test_doubleswitch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_doubleswitch
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P4-1/P4-1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
