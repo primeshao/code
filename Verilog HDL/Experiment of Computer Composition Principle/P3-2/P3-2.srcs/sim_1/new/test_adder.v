@@ -1,11 +1,11 @@
 `timescale 1ns/100ps
 module test_adder();
-    reg clk_1Hz,op;
+    reg clk_1Hz;
     reg [3:0]a,b;
     reg cin;
-    wire  [3:0]s;
+    wire [3:0]s;
     wire cout;
-    parallel_adder u0(.a(a),.b(b),.cin(cin),.s(s),.cout(cout));
+    parallel_adder u0(a,b,cin,s,cout);
     always #10 clk_1Hz = ~clk_1Hz ;
     initial
     begin

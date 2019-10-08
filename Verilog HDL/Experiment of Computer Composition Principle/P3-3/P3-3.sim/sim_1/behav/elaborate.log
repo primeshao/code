@@ -6,9 +6,18 @@ Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
 WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P3-3/P3-3.srcs/sources_1/new/adder.v" Line 1. Module adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P3-3/P3-3.srcs/sources_1/new/adder.v" Line 21. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P3-3/P3-3.srcs/sources_1/new/adder.v" Line 21. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P3-3/P3-3.srcs/sources_1/new/adder.v" Line 21. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P3-3/P3-3.srcs/sources_1/new/adder.v" Line 21. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P3-3/P3-3.srcs/sources_1/new/adder.v" Line 1. Module adder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P3-3/P3-3.srcs/sources_1/new/adder.v" Line 21. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P3-3/P3-3.srcs/sources_1/new/adder.v" Line 21. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P3-3/P3-3.srcs/sources_1/new/adder.v" Line 21. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P3-3/P3-3.srcs/sources_1/new/adder.v" Line 21. Module fulladder doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.fulladder
 Compiling module xil_defaultlib.adder
 Compiling module xil_defaultlib.test_adder
 Compiling module xil_defaultlib.glbl
