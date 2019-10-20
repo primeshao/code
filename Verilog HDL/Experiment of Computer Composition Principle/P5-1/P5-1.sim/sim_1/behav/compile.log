@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P5-1/P5-1.srcs/sources_1/new/decision_behavior.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decision_behavior
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P5-1/P5-1.srcs/sim_1/new/test_decision.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_decision
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P5-1/P5-1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
