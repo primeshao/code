@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sun Oct 27 23:24:21 2019
+# Process ID: 6900
+# Log file: E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P6-1-2/P6-1-2.runs/synth_1/OnesComplement2TwosComplement.vds
+# Journal file: E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P6-1-2/P6-1-2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source OnesComplement2TwosComplement.tcl -notrace

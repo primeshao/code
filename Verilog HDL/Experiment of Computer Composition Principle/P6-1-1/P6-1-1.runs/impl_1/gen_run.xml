@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1572189380">
+  <File Type="OPT-DCP" Name="Code2OnesComplement_opt.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="PWROPT-DCP" Name="Code2OnesComplement_pwropt.dcp"/>
+  <File Type="ROUTE-DCP" Name="Code2OnesComplement_routed.dcp"/>
+  <File Type="PA-TCL" Name="Code2OnesComplement.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="Code2OnesComplement_drc_opted.rpt"/>
+  <File Type="PWROPT-DRC" Name="Code2OnesComplement_drc_pwropted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Code2OnesComplement.hwdef"/>
+  <File Type="PLACE-DCP" Name="Code2OnesComplement_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Code2OnesComplement_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Code2OnesComplement_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Code2OnesComplement_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Code2OnesComplement_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Code2OnesComplement_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Code2OnesComplement_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Code2OnesComplement_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Code2OnesComplement_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="Code2OnesComplement_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="Code2OnesComplement.vdi"/>
+  <File Type="PHYSOPT-DRC" Name="Code2OnesComplement_drc_physopted.rpt"/>
+  <File Type="ROUTE-DRC" Name="Code2OnesComplement_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Code2OnesComplement_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="Code2OnesComplement_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="Code2OnesComplement_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="Code2OnesComplement_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Code2OnesComplement_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Code2OnesComplement_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Code2OnesComplement_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Code2OnesComplement_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Code2OnesComplement_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Code2OnesComplement_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Code2OnesComplement_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Code2OnesComplement_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Code2OnesComplement_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Code2OnesComplement_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="Code2OnesComplement.bit"/>
+  <File Type="BG-BIN" Name="Code2OnesComplement.bin"/>
+  <File Type="BITSTR-MSK" Name="Code2OnesComplement.msk"/>
+  <File Type="BITSTR-RBT" Name="Code2OnesComplement.rbt"/>
+  <File Type="BITSTR-NKY" Name="Code2OnesComplement.nky"/>
+  <File Type="BITSTR-BMM" Name="Code2OnesComplement_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Code2OnesComplement.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="Code2OnesComplement.sysdef"/>
+  <File Type="BG-BGN" Name="Code2OnesComplement.bgn"/>
+  <File Type="BG-DRC" Name="Code2OnesComplement.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Code2OnesComplement.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Code2OnesComplement"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015">
+      <Desc>Vivado Implementation Defaults</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
