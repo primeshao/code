@@ -1,0 +1,7 @@
+Running: xsim.dir/PA4_test_behav/xsimk.exe -simmode gui -wdb PA4_test_behav.wdb -simrunnum 0 -socket 52277
+Design successfully loaded
+Design Loading Memory Usage: 21292 KB (Peak: 21292 KB)
+Design Loading CPU Usage: 217 ms
+Simulation completed
+Simulation Memory Usage: 21692 KB (Peak: 21692 KB)
+Simulation CPU Usage: 217 ms

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Tue Oct 29 22:00:16 2019
+# Process ID: 72
+# Log file: E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P7-1/P7-1.runs/synth_1/PA4.vds
+# Journal file: E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P7-1/P7-1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source PA4.tcl -notrace

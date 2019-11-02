@@ -1,0 +1,33 @@
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 20e4894d2b58428bbd0444952dd3ffcf --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot adder32_test_behav xil_defaultlib.adder32_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P7-2/P7-2.srcs/sources_1/new/adder32.v" Line 1. Module adder32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P7-2/P7-2.srcs/sources_1/new/PA4.v" Line 1. Module PA4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P7-2/P7-2.srcs/sources_1/new/PA4.v" Line 1. Module PA4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P7-2/P7-2.srcs/sources_1/new/PA4.v" Line 1. Module PA4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P7-2/P7-2.srcs/sources_1/new/PA4.v" Line 1. Module PA4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P7-2/P7-2.srcs/sources_1/new/PA4.v" Line 1. Module PA4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P7-2/P7-2.srcs/sources_1/new/PA4.v" Line 1. Module PA4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P7-2/P7-2.srcs/sources_1/new/PA4.v" Line 1. Module PA4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P7-2/P7-2.srcs/sources_1/new/PA4.v" Line 1. Module PA4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P7-2/P7-2.srcs/sources_1/new/adder32.v" Line 1. Module adder32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P7-2/P7-2.srcs/sources_1/new/PA4.v" Line 1. Module PA4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P7-2/P7-2.srcs/sources_1/new/PA4.v" Line 1. Module PA4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P7-2/P7-2.srcs/sources_1/new/PA4.v" Line 1. Module PA4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P7-2/P7-2.srcs/sources_1/new/PA4.v" Line 1. Module PA4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P7-2/P7-2.srcs/sources_1/new/PA4.v" Line 1. Module PA4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P7-2/P7-2.srcs/sources_1/new/PA4.v" Line 1. Module PA4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P7-2/P7-2.srcs/sources_1/new/PA4.v" Line 1. Module PA4 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P7-2/P7-2.srcs/sources_1/new/PA4.v" Line 1. Module PA4 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PA4
+Compiling module xil_defaultlib.adder32
+Compiling module xil_defaultlib.adder32_test
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot adder32_test_behav

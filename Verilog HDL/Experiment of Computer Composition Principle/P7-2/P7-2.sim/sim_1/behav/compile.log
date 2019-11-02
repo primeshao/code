@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P7-2/P7-2.srcs/sources_1/new/PA4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PA4
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P7-2/P7-2.srcs/sources_1/new/adder32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P7-2/P7-2.srcs/sim_1/new/adder32_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder32_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P7-2/P7-2.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
