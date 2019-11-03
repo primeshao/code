@@ -2,7 +2,7 @@
 ==============================
 #### Backup of personal course code<br>
 
-![](img.png)  
+![](http://img.blog.csdn.net/20150325202951885)  
 <br>由于目前学习了C，Java，Verilog HDL，本项目共分为3个部分
 
 # 声明
