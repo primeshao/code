@@ -2,7 +2,7 @@
 ==============================
 #### Backup of personal course code<br>
 
-![](https://raw.githubusercontent.com/primeshao/code/master/img.png)  
+![](img.png)  
 <br>由于目前学习了C，Java，Verilog HDL，本项目共分为3个部分
 
 # 声明
