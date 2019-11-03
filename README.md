@@ -17,7 +17,6 @@
 
 
 
-<br>
 # 项目一览
 ## 第一部分 C
 		1	C Experiment
@@ -27,7 +26,7 @@
 		5	little code
 ## 第二部分 Java
 		1	homework
-		2	UDPServer.rar //局域网通信接收端
+		2	UDPServer.rar
 ## 第三部分 Verilog	 HDL
 		1	Experiment of Computer Composition Principle
 
