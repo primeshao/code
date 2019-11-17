@@ -1,0 +1,7 @@
+Running: xsim.dir/test_ParallelMultiplier_behav/xsimk.exe -simmode gui -wdb test_ParallelMultiplier_behav.wdb -simrunnum 0 -socket 54280
+Design successfully loaded
+Design Loading Memory Usage: 22200 KB (Peak: 22200 KB)
+Design Loading CPU Usage: 281 ms
+Simulation completed
+Simulation Memory Usage: 22592 KB (Peak: 22592 KB)
+Simulation CPU Usage: 328 ms

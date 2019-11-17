@@ -1,0 +1,637 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date              : Mon Nov 11 12:07:38 2019
+| Host              : DESKTOP-OKEPO3S running 64-bit major release  (build 9200)
+| Command           : report_clock_utilization -file SignMagnitudeMultiplier_clock_utilization_routed.rpt
+| Design            : SignMagnitudeMultiplier
+| Device            : 7a100t-csg324
+| Speed File        : -1  PRODUCTION 1.14 2014-09-11
+| Temperature Grade : C
+----------------------------------------------------------------------------------------------------------
+
+Clock Utilization Report
+
+Table of Contents
+-----------------
+1. Clock Primitive Utilization
+2. Details of Global Clocks
+3. Details of Regional Clocks
+4. Details of Multi-Regional Clocks
+5. Details of I/O Clocks
+6. Details of Local Clocks
+7. Clock Regions : Key Resource Utilization
+8. Net wise resources used in clock region X0Y1
+9. Net wise resources used in clock region X0Y2
+
+1. Clock Primitive Utilization
+------------------------------
+
++-------+------+-----------+-----------+
+| Type  | Used | Available | Num Fixed |
++-------+------+-----------+-----------+
+| BUFG  |    1 |        32 |         0 |
+| BUFH  |    0 |        96 |         0 |
+| BUFIO |    0 |        24 |         0 |
+| MMCM  |    0 |         6 |         0 |
+| PLL   |    0 |         6 |         0 |
+| BUFR  |    0 |        24 |         0 |
+| BUFMR |    0 |        12 |         0 |
++-------+------+-----------+-----------+
+
+
+2. Details of Global Clocks
+---------------------------
+
++-------+--------------------+---------------+--------------+-------+
+|       |                    |               |   Num Loads  |       |
++-------+--------------------+---------------+------+-------+-------+
+| Index | BUFG Cell          | Net Name      | BELs | Sites | Fixed |
++-------+--------------------+---------------+------+-------+-------+
+|     1 | clk_IBUF_BUFG_inst | clk_IBUF_BUFG |  188 |   142 |    no |
++-------+--------------------+---------------+------+-------+-------+
+
+
+3. Details of Regional Clocks
+-----------------------------
+
+4. Details of Multi-Regional Clocks
+-----------------------------------
+
+5. Details of I/O Clocks
+------------------------
+
+6. Details of Local Clocks
+--------------------------
+
++-------+-------------------+-----------------------+--------------+-------+
+|       |                   |                       |   Num Loads  |       |
++-------+-------------------+-----------------------+------+-------+-------+
+| Index | Local Clk Src     | Net Name              | BELs | Sites | Fixed |
++-------+-------------------+-----------------------+------+-------+-------+
+|     1 | B_reg[10]_LDC_i_1 | B_reg[10]_LDC_i_1_n_0 |    2 |     2 |    no |
+|     2 | B_reg[11]_LDC_i_1 | B_reg[11]_LDC_i_1_n_0 |    2 |     2 |    no |
+|     3 | B_reg[12]_LDC_i_1 | B_reg[12]_LDC_i_1_n_0 |    2 |     2 |    no |
+|     4 | B_reg[13]_LDC_i_1 | B_reg[13]_LDC_i_1_n_0 |    2 |     2 |    no |
+|     5 | B_reg[14]_LDC_i_1 | B_reg[14]_LDC_i_1_n_0 |    2 |     2 |    no |
+|     6 | B_reg[15]_LDC_i_1 | B_reg[15]_LDC_i_1_n_0 |    2 |     2 |    no |
+|     7 | B_reg[16]_LDC_i_1 | B_reg[16]_LDC_i_1_n_0 |    2 |     2 |    no |
+|     8 | B_reg[17]_LDC_i_1 | B_reg[17]_LDC_i_1_n_0 |    2 |     2 |    no |
+|     9 | B_reg[18]_LDC_i_1 | B_reg[18]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    10 | B_reg[19]_LDC_i_1 | B_reg[19]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    11 | B_reg[20]_LDC_i_1 | B_reg[20]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    12 | B_reg[21]_LDC_i_1 | B_reg[21]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    13 | B_reg[22]_LDC_i_1 | B_reg[22]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    14 | B_reg[23]_LDC_i_1 | B_reg[23]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    15 | B_reg[24]_LDC_i_1 | B_reg[24]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    16 | B_reg[25]_LDC_i_1 | B_reg[25]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    17 | B_reg[26]_LDC_i_1 | B_reg[26]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    18 | B_reg[27]_LDC_i_1 | B_reg[27]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    19 | B_reg[28]_LDC_i_1 | B_reg[28]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    20 | B_reg[29]_LDC_i_1 | B_reg[29]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    21 | B_reg[2]_LDC_i_1  | B_reg[2]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    22 | B_reg[30]_LDC_i_1 | B_reg[30]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    23 | B_reg[31]_LDC_i_1 | B_reg[31]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    24 | B_reg[32]_LDC_i_1 | B_reg[32]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    25 | B_reg[3]_LDC_i_1  | B_reg[3]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    26 | B_reg[4]_LDC_i_1  | B_reg[4]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    27 | B_reg[5]_LDC_i_1  | B_reg[5]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    28 | B_reg[6]_LDC_i_1  | B_reg[6]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    29 | B_reg[7]_LDC_i_1  | B_reg[7]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    30 | B_reg[8]_LDC_i_1  | B_reg[8]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    31 | B_reg[9]_LDC_i_1  | B_reg[9]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    32 | C_reg[10]_LDC_i_1 | C_reg[10]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    33 | C_reg[11]_LDC_i_1 | C_reg[11]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    34 | C_reg[12]_LDC_i_1 | C_reg[12]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    35 | C_reg[13]_LDC_i_1 | C_reg[13]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    36 | C_reg[14]_LDC_i_1 | C_reg[14]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    37 | C_reg[15]_LDC_i_1 | C_reg[15]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    38 | C_reg[16]_LDC_i_1 | C_reg[16]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    39 | C_reg[17]_LDC_i_1 | C_reg[17]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    40 | C_reg[18]_LDC_i_1 | C_reg[18]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    41 | C_reg[19]_LDC_i_1 | C_reg[19]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    42 | C_reg[1]_LDC_i_1  | C_reg[1]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    43 | C_reg[20]_LDC_i_1 | C_reg[20]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    44 | C_reg[21]_LDC_i_1 | C_reg[21]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    45 | C_reg[22]_LDC_i_1 | C_reg[22]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    46 | C_reg[23]_LDC_i_1 | C_reg[23]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    47 | C_reg[24]_LDC_i_1 | C_reg[24]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    48 | C_reg[25]_LDC_i_1 | C_reg[25]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    49 | C_reg[26]_LDC_i_1 | C_reg[26]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    50 | C_reg[27]_LDC_i_1 | C_reg[27]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    51 | C_reg[28]_LDC_i_1 | C_reg[28]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    52 | C_reg[29]_LDC_i_1 | C_reg[29]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    53 | C_reg[2]_LDC_i_1  | C_reg[2]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    54 | C_reg[30]_LDC_i_1 | C_reg[30]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    55 | C_reg[31]_LDC_i_1 | C_reg[31]_LDC_i_1_n_0 |    2 |     2 |    no |
+|    56 | C_reg[3]_LDC_i_1  | C_reg[3]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    57 | C_reg[4]_LDC_i_1  | C_reg[4]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    58 | C_reg[5]_LDC_i_1  | C_reg[5]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    59 | C_reg[6]_LDC_i_1  | C_reg[6]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    60 | C_reg[7]_LDC_i_1  | C_reg[7]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    61 | C_reg[8]_LDC_i_1  | C_reg[8]_LDC_i_1_n_0  |    2 |     2 |    no |
+|    62 | C_reg[9]_LDC_i_1  | C_reg[9]_LDC_i_1_n_0  |    2 |     2 |    no |
++-------+-------------------+-----------------------+------+-------+-------+
+
+
+7. Clock Regions : Key Resource Utilization
+-------------------------------------------
+
++-------------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|                   | Global Clock |     BUFRs    |    BUFMRs    |    BUFIOs    |     MMCM     |      PLL     |      GT      |      PCI     |    ILOGIC    |    OLOGIC    |      FF      |     LUTM     |    RAMB18    |    RAMB36    |    DSP48E1   |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+| X0Y0              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 20800 |    0 |  2400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y0              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     0 |    0 |     0 |    0 |     0 |    0 | 12000 |    0 |  2200 |    0 |    40 |    0 |    20 |    0 |    40 |
+| X0Y1              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  193 | 16000 |    0 |  2400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 15200 |    0 |  2600 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X0Y2              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   57 | 16000 |    0 |  2400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 15200 |    0 |  2600 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X0Y3              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 20800 |    0 |  2400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y3              |    0 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     5 |    0 |     1 |    0 |     0 |    0 |     0 |    0 | 10800 |    0 |  2000 |    0 |    30 |    0 |    15 |    0 |    40 |
++-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
+* RAMB36 site can be used as two RAMB18/FIFO18 sites.
+
+
+8. Net wise resources used in clock region X0Y1
+-----------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | Clock Net Name |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+| BUFG        | BUFHCE_X0Y20 |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 150 |     0 |        0 | clk_IBUF_BUFG  |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+
+
+9. Net wise resources used in clock region X0Y2
+-----------------------------------------------
+
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+| Source Type | BUFHCE Site  | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s | Clock Net Name |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+| BUFG        | BUFHCE_X0Y32 |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  38 |     0 |        0 | clk_IBUF_BUFG  |
++-------------+--------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------+
+
+
+
+# Location of BUFG Primitives 
+set_property LOC BUFGCTRL_X0Y16 [get_cells clk_IBUF_BUFG_inst]
+
+# Location of IO Clock Primitives
+
+# Location of MMCM Clock Primitives
+
+# Location of BUFH Clock Primitives
+
+# Location of BUFR Clock Primitives
+
+# Location of BUFMR Clock Primitives
+
+# Location of PLL Clock Primitives
+
+# Location of IO Primitives which is load of clock spine
+
+# Location of clock ports
+set_property LOC IOB_X0Y128 [get_ports clk]
+
+# Clock net "B_reg[10]_LDC_i_1_n_0" driven by instance "B_reg[10]_LDC_i_1" located at site "SLICE_X8Y72"
+#startgroup
+create_pblock {CLKAG_B_reg[10]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[10]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[10]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[10]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[11]_LDC_i_1_n_0" driven by instance "B_reg[11]_LDC_i_1" located at site "SLICE_X4Y73"
+#startgroup
+create_pblock {CLKAG_B_reg[11]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[11]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[11]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[11]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[12]_LDC_i_1_n_0" driven by instance "B_reg[12]_LDC_i_1" located at site "SLICE_X7Y72"
+#startgroup
+create_pblock {CLKAG_B_reg[12]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[12]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[12]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[12]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[13]_LDC_i_1_n_0" driven by instance "B_reg[13]_LDC_i_1" located at site "SLICE_X4Y67"
+#startgroup
+create_pblock {CLKAG_B_reg[13]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[13]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[13]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[13]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[14]_LDC_i_1_n_0" driven by instance "B_reg[14]_LDC_i_1" located at site "SLICE_X5Y67"
+#startgroup
+create_pblock {CLKAG_B_reg[14]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[14]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[14]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[14]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[15]_LDC_i_1_n_0" driven by instance "B_reg[15]_LDC_i_1" located at site "SLICE_X4Y70"
+#startgroup
+create_pblock {CLKAG_B_reg[15]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[15]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[15]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[15]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[16]_LDC_i_1_n_0" driven by instance "B_reg[16]_LDC_i_1" located at site "SLICE_X5Y70"
+#startgroup
+create_pblock {CLKAG_B_reg[16]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[16]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[16]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[16]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[17]_LDC_i_1_n_0" driven by instance "B_reg[17]_LDC_i_1" located at site "SLICE_X4Y68"
+#startgroup
+create_pblock {CLKAG_B_reg[17]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[17]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[17]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[17]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[18]_LDC_i_1_n_0" driven by instance "B_reg[18]_LDC_i_1" located at site "SLICE_X2Y68"
+#startgroup
+create_pblock {CLKAG_B_reg[18]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[18]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[18]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[18]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[19]_LDC_i_1_n_0" driven by instance "B_reg[19]_LDC_i_1" located at site "SLICE_X4Y69"
+#startgroup
+create_pblock {CLKAG_B_reg[19]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[19]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[19]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[19]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[20]_LDC_i_1_n_0" driven by instance "B_reg[20]_LDC_i_1" located at site "SLICE_X6Y69"
+#startgroup
+create_pblock {CLKAG_B_reg[20]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[20]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[20]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[20]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[21]_LDC_i_1_n_0" driven by instance "B_reg[21]_LDC_i_1" located at site "SLICE_X6Y70"
+#startgroup
+create_pblock {CLKAG_B_reg[21]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[21]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[21]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[21]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[22]_LDC_i_1_n_0" driven by instance "B_reg[22]_LDC_i_1" located at site "SLICE_X7Y71"
+#startgroup
+create_pblock {CLKAG_B_reg[22]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[22]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[22]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[22]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[23]_LDC_i_1_n_0" driven by instance "B_reg[23]_LDC_i_1" located at site "SLICE_X5Y70"
+#startgroup
+create_pblock {CLKAG_B_reg[23]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[23]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[23]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[23]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[24]_LDC_i_1_n_0" driven by instance "B_reg[24]_LDC_i_1" located at site "SLICE_X6Y70"
+#startgroup
+create_pblock {CLKAG_B_reg[24]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[24]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[24]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[24]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[25]_LDC_i_1_n_0" driven by instance "B_reg[25]_LDC_i_1" located at site "SLICE_X2Y68"
+#startgroup
+create_pblock {CLKAG_B_reg[25]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[25]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[25]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[25]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[26]_LDC_i_1_n_0" driven by instance "B_reg[26]_LDC_i_1" located at site "SLICE_X2Y68"
+#startgroup
+create_pblock {CLKAG_B_reg[26]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[26]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[26]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[26]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[27]_LDC_i_1_n_0" driven by instance "B_reg[27]_LDC_i_1" located at site "SLICE_X2Y68"
+#startgroup
+create_pblock {CLKAG_B_reg[27]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[27]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[27]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[27]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[28]_LDC_i_1_n_0" driven by instance "B_reg[28]_LDC_i_1" located at site "SLICE_X5Y67"
+#startgroup
+create_pblock {CLKAG_B_reg[28]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[28]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[28]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[28]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[29]_LDC_i_1_n_0" driven by instance "B_reg[29]_LDC_i_1" located at site "SLICE_X4Y69"
+#startgroup
+create_pblock {CLKAG_B_reg[29]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[29]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[29]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[29]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[2]_LDC_i_1_n_0" driven by instance "B_reg[2]_LDC_i_1" located at site "SLICE_X5Y75"
+#startgroup
+create_pblock {CLKAG_B_reg[2]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[2]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[2]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[2]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[30]_LDC_i_1_n_0" driven by instance "B_reg[30]_LDC_i_1" located at site "SLICE_X5Y69"
+#startgroup
+create_pblock {CLKAG_B_reg[30]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[30]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[30]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[30]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[31]_LDC_i_1_n_0" driven by instance "B_reg[31]_LDC_i_1" located at site "SLICE_X5Y69"
+#startgroup
+create_pblock {CLKAG_B_reg[31]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[31]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[31]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[31]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[32]_LDC_i_1_n_0" driven by instance "B_reg[32]_LDC_i_1" located at site "SLICE_X7Y69"
+#startgroup
+create_pblock {CLKAG_B_reg[32]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[32]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[32]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[32]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[3]_LDC_i_1_n_0" driven by instance "B_reg[3]_LDC_i_1" located at site "SLICE_X7Y75"
+#startgroup
+create_pblock {CLKAG_B_reg[3]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[3]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[3]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[3]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[4]_LDC_i_1_n_0" driven by instance "B_reg[4]_LDC_i_1" located at site "SLICE_X7Y74"
+#startgroup
+create_pblock {CLKAG_B_reg[4]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[4]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[4]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[4]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[5]_LDC_i_1_n_0" driven by instance "B_reg[5]_LDC_i_1" located at site "SLICE_X5Y73"
+#startgroup
+create_pblock {CLKAG_B_reg[5]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[5]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[5]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[5]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[6]_LDC_i_1_n_0" driven by instance "B_reg[6]_LDC_i_1" located at site "SLICE_X6Y74"
+#startgroup
+create_pblock {CLKAG_B_reg[6]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[6]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[6]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[6]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[7]_LDC_i_1_n_0" driven by instance "B_reg[7]_LDC_i_1" located at site "SLICE_X4Y76"
+#startgroup
+create_pblock {CLKAG_B_reg[7]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[7]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[7]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[7]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[8]_LDC_i_1_n_0" driven by instance "B_reg[8]_LDC_i_1" located at site "SLICE_X4Y76"
+#startgroup
+create_pblock {CLKAG_B_reg[8]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[8]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[8]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[8]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "B_reg[9]_LDC_i_1_n_0" driven by instance "B_reg[9]_LDC_i_1" located at site "SLICE_X7Y72"
+#startgroup
+create_pblock {CLKAG_B_reg[9]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_B_reg[9]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="B_reg[9]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_B_reg[9]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "C_reg[10]_LDC_i_1_n_0" driven by instance "C_reg[10]_LDC_i_1" located at site "SLICE_X0Y99"
+#startgroup
+create_pblock {CLKAG_C_reg[10]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[10]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[10]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[10]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "C_reg[11]_LDC_i_1_n_0" driven by instance "C_reg[11]_LDC_i_1" located at site "SLICE_X0Y99"
+#startgroup
+create_pblock {CLKAG_C_reg[11]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[11]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[11]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[11]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "C_reg[12]_LDC_i_1_n_0" driven by instance "C_reg[12]_LDC_i_1" located at site "SLICE_X0Y100"
+#startgroup
+create_pblock {CLKAG_C_reg[12]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[12]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[12]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[12]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "C_reg[13]_LDC_i_1_n_0" driven by instance "C_reg[13]_LDC_i_1" located at site "SLICE_X2Y100"
+#startgroup
+create_pblock {CLKAG_C_reg[13]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[13]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[13]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[13]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "C_reg[14]_LDC_i_1_n_0" driven by instance "C_reg[14]_LDC_i_1" located at site "SLICE_X3Y100"
+#startgroup
+create_pblock {CLKAG_C_reg[14]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[14]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[14]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[14]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "C_reg[15]_LDC_i_1_n_0" driven by instance "C_reg[15]_LDC_i_1" located at site "SLICE_X0Y101"
+#startgroup
+create_pblock {CLKAG_C_reg[15]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[15]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[15]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[15]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "C_reg[16]_LDC_i_1_n_0" driven by instance "C_reg[16]_LDC_i_1" located at site "SLICE_X0Y104"
+#startgroup
+create_pblock {CLKAG_C_reg[16]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[16]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[16]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[16]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "C_reg[17]_LDC_i_1_n_0" driven by instance "C_reg[17]_LDC_i_1" located at site "SLICE_X1Y103"
+#startgroup
+create_pblock {CLKAG_C_reg[17]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[17]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[17]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[17]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "C_reg[18]_LDC_i_1_n_0" driven by instance "C_reg[18]_LDC_i_1" located at site "SLICE_X0Y104"
+#startgroup
+create_pblock {CLKAG_C_reg[18]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[18]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[18]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[18]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "C_reg[19]_LDC_i_1_n_0" driven by instance "C_reg[19]_LDC_i_1" located at site "SLICE_X0Y119"
+#startgroup
+create_pblock {CLKAG_C_reg[19]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[19]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[19]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[19]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "C_reg[1]_LDC_i_1_n_0" driven by instance "C_reg[1]_LDC_i_1" located at site "SLICE_X3Y67"
+#startgroup
+create_pblock {CLKAG_C_reg[1]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[1]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[1]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[1]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "C_reg[20]_LDC_i_1_n_0" driven by instance "C_reg[20]_LDC_i_1" located at site "SLICE_X0Y120"
+#startgroup
+create_pblock {CLKAG_C_reg[20]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[20]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[20]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[20]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "C_reg[21]_LDC_i_1_n_0" driven by instance "C_reg[21]_LDC_i_1" located at site "SLICE_X1Y121"
+#startgroup
+create_pblock {CLKAG_C_reg[21]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[21]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[21]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[21]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "C_reg[22]_LDC_i_1_n_0" driven by instance "C_reg[22]_LDC_i_1" located at site "SLICE_X0Y123"
+#startgroup
+create_pblock {CLKAG_C_reg[22]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[22]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[22]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[22]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "C_reg[23]_LDC_i_1_n_0" driven by instance "C_reg[23]_LDC_i_1" located at site "SLICE_X1Y124"
+#startgroup
+create_pblock {CLKAG_C_reg[23]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[23]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[23]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[23]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "C_reg[24]_LDC_i_1_n_0" driven by instance "C_reg[24]_LDC_i_1" located at site "SLICE_X0Y124"
+#startgroup
+create_pblock {CLKAG_C_reg[24]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[24]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[24]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[24]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "C_reg[25]_LDC_i_1_n_0" driven by instance "C_reg[25]_LDC_i_1" located at site "SLICE_X1Y126"
+#startgroup
+create_pblock {CLKAG_C_reg[25]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[25]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[25]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[25]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "C_reg[26]_LDC_i_1_n_0" driven by instance "C_reg[26]_LDC_i_1" located at site "SLICE_X0Y126"
+#startgroup
+create_pblock {CLKAG_C_reg[26]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[26]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[26]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[26]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "C_reg[27]_LDC_i_1_n_0" driven by instance "C_reg[27]_LDC_i_1" located at site "SLICE_X1Y127"
+#startgroup
+create_pblock {CLKAG_C_reg[27]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[27]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[27]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[27]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "C_reg[28]_LDC_i_1_n_0" driven by instance "C_reg[28]_LDC_i_1" located at site "SLICE_X0Y129"
+#startgroup
+create_pblock {CLKAG_C_reg[28]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[28]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[28]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[28]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "C_reg[29]_LDC_i_1_n_0" driven by instance "C_reg[29]_LDC_i_1" located at site "SLICE_X2Y129"
+#startgroup
+create_pblock {CLKAG_C_reg[29]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[29]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[29]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[29]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "C_reg[2]_LDC_i_1_n_0" driven by instance "C_reg[2]_LDC_i_1" located at site "SLICE_X0Y93"
+#startgroup
+create_pblock {CLKAG_C_reg[2]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[2]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[2]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[2]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "C_reg[30]_LDC_i_1_n_0" driven by instance "C_reg[30]_LDC_i_1" located at site "SLICE_X1Y131"
+#startgroup
+create_pblock {CLKAG_C_reg[30]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[30]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[30]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[30]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "C_reg[31]_LDC_i_1_n_0" driven by instance "C_reg[31]_LDC_i_1" located at site "SLICE_X0Y128"
+#startgroup
+create_pblock {CLKAG_C_reg[31]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[31]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[31]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[31]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup
+
+# Clock net "C_reg[3]_LDC_i_1_n_0" driven by instance "C_reg[3]_LDC_i_1" located at site "SLICE_X1Y94"
+#startgroup
+create_pblock {CLKAG_C_reg[3]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[3]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[3]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[3]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "C_reg[4]_LDC_i_1_n_0" driven by instance "C_reg[4]_LDC_i_1" located at site "SLICE_X0Y96"
+#startgroup
+create_pblock {CLKAG_C_reg[4]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[4]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[4]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[4]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "C_reg[5]_LDC_i_1_n_0" driven by instance "C_reg[5]_LDC_i_1" located at site "SLICE_X0Y96"
+#startgroup
+create_pblock {CLKAG_C_reg[5]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[5]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[5]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[5]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "C_reg[6]_LDC_i_1_n_0" driven by instance "C_reg[6]_LDC_i_1" located at site "SLICE_X3Y95"
+#startgroup
+create_pblock {CLKAG_C_reg[6]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[6]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[6]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[6]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "C_reg[7]_LDC_i_1_n_0" driven by instance "C_reg[7]_LDC_i_1" located at site "SLICE_X0Y97"
+#startgroup
+create_pblock {CLKAG_C_reg[7]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[7]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[7]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[7]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "C_reg[8]_LDC_i_1_n_0" driven by instance "C_reg[8]_LDC_i_1" located at site "SLICE_X1Y100"
+#startgroup
+create_pblock {CLKAG_C_reg[8]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[8]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[8]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[8]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "C_reg[9]_LDC_i_1_n_0" driven by instance "C_reg[9]_LDC_i_1" located at site "SLICE_X2Y98"
+#startgroup
+create_pblock {CLKAG_C_reg[9]_LDC_i_1_n_0}
+add_cells_to_pblock [get_pblocks  {CLKAG_C_reg[9]_LDC_i_1_n_0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="C_reg[9]_LDC_i_1_n_0"}]]]
+resize_pblock [get_pblocks {CLKAG_C_reg[9]_LDC_i_1_n_0}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
+#endgroup
+
+# Clock net "clk_IBUF_BUFG" driven by instance "clk_IBUF_BUFG_inst" located at site "BUFGCTRL_X0Y16"
+#startgroup
+create_pblock {CLKAG_clk_IBUF_BUFG}
+add_cells_to_pblock [get_pblocks  {CLKAG_clk_IBUF_BUFG}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL } -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="clk_IBUF_BUFG"}]]]
+resize_pblock [get_pblocks {CLKAG_clk_IBUF_BUFG}] -add {CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X0Y2:CLOCKREGION_X0Y2}
+#endgroup

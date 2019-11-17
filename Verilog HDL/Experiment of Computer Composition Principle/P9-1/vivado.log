@@ -1,0 +1,87 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sat Nov 16 10:36:19 2019
+# Process ID: 17060
+# Log file: E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-1/vivado.log
+# Journal file: E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-1/P9-1.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/P9-1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'P9-1.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2015.2/data/ip'.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'test_RAM' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-1/P9-1.sim/sim_1/behav'
+"xvlog -m64 --relax -prj test_RAM_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-1/P9-1.srcs/sources_1/new/RAM_8_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM_8_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-1/P9-1.srcs/sim_1/new/test_RAM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_RAM
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-1/P9-1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 648.348 ; gain = 0.000
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-1/P9-1.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto 89b051d189bc43a79be0c20dd5722751 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_RAM_behav xil_defaultlib.test_RAM xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-1/P9-1.srcs/sources_1/new/RAM_8_8.v" Line 1. Module RAM_8_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-1/P9-1.srcs/sources_1/new/RAM_8_8.v" Line 1. Module RAM_8_8 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.RAM_8_8
+Compiling module xil_defaultlib.test_RAM
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_RAM_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source E:/Program -notrace
+couldn't read file "E:/Program": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Sat Nov 16 10:37:08 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 648.348 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-1/P9-1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_RAM_behav -key {Behavioral:sim_1:Functional:test_RAM} -tclbatch {test_RAM.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source test_RAM.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 659.031 ; gain = 10.684
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_RAM_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:27 . Memory (MB): peak = 659.031 ; gain = 10.684
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 16 10:38:03 2019...

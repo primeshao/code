@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM256_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/mux4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/decode3_8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode3_8
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM1K_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RAM1K_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sim_1/new/test_RAM1K_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_RAM1K_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

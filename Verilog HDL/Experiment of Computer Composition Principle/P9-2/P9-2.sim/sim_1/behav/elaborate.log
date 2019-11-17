@@ -1,0 +1,51 @@
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto a41aead46f7e4803afb4224fb367ad32 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot test_RAM1K_32_behav xil_defaultlib.test_RAM1K_32 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM1K_32.v" Line 1. Module RAM1K_32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM1K_32.v" Line 1. Module RAM1K_32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v" Line 1. Module RAM256_8 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.decode3_8
+Compiling module xil_defaultlib.RAM256_8
+Compiling module xil_defaultlib.mux4_1
+Compiling module xil_defaultlib.RAM1K_32
+Compiling module xil_defaultlib.test_RAM1K_32
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot test_RAM1K_32_behav

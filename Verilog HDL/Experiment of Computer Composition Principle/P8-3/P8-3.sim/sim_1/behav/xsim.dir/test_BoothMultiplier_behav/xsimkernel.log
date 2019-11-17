@@ -1,0 +1,7 @@
+Running: xsim.dir/test_BoothMultiplier_behav/xsimk.exe -simmode gui -wdb test_BoothMultiplier_behav.wdb -simrunnum 0 -socket 54038
+Design successfully loaded
+Design Loading Memory Usage: 22024 KB (Peak: 22024 KB)
+Design Loading CPU Usage: 608 ms
+Simulation completed
+Simulation Memory Usage: 22412 KB (Peak: 22412 KB)
+Simulation CPU Usage: 640 ms

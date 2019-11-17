@@ -1,0 +1,327 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sun Nov 17 23:58:16 2019
+# Process ID: 4844
+# Log file: E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.runs/synth_1/RAM1K_32.vds
+# Journal file: E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source RAM1K_32.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at E:/Xilinx/Vivado/2015.2/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at E:/Xilinx/Vivado/2015.2/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+Command: synth_design -top RAM1K_32 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-1223] The version limit for your license is '2018.08' and will expire in -443 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 259.473 ; gain = 82.605
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'RAM1K_32' [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM1K_32.v:1]
+	Parameter ON bound to: 1'b0 
+INFO: [Synth 8-638] synthesizing module 'decode3_8' [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/decode3_8.v:23]
+INFO: [Synth 8-226] default block is never used [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/decode3_8.v:27]
+INFO: [Synth 8-256] done synthesizing module 'decode3_8' (1#1) [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/decode3_8.v:23]
+INFO: [Synth 8-638] synthesizing module 'RAM256_8' [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v:1]
+	Parameter WORD_SIZE bound to: 8 - type: integer 
+	Parameter WORD_NUMBER bound to: 256 - type: integer 
+	Parameter Address_SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RAM256_8' (2#1) [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM256_8.v:1]
+INFO: [Synth 8-638] synthesizing module 'mux4_1' [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/mux4_1.v:23]
+	Parameter data_width bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/mux4_1.v:33]
+INFO: [Synth 8-256] done synthesizing module 'mux4_1' (3#1) [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/mux4_1.v:23]
+INFO: [Synth 8-256] done synthesizing module 'RAM1K_32' (4#1) [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-2/P9-2.srcs/sources_1/imports/first/RAM1K_32.v:1]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 293.820 ; gain = 116.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 293.820 ; gain = 116.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 293.820 ; gain = 116.953
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 300.680 ; gain = 123.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 16    
++---RAMs : 
+	               2K Bit         RAMs := 16    
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module decode3_8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module RAM256_8 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	               2K Bit         RAMs := 1     
+Module mux4_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 436.598 ; gain = 259.730
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 437.863 ; gain = 260.996
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 437.863 ; gain = 260.996
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+INFO: [Synth 8-5562] The signal u0_0/RAM_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (8 address bits)* is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5562] The signal u0_1/RAM_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (8 address bits)* is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5562] The signal u0_2/RAM_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (8 address bits)* is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5562] The signal u0_3/RAM_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (8 address bits)* is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5562] The signal u1_0/RAM_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (8 address bits)* is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5562] The signal u1_1/RAM_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (8 address bits)* is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5562] The signal u1_2/RAM_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (8 address bits)* is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5562] The signal u1_3/RAM_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (8 address bits)* is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5562] The signal u2_0/RAM_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (8 address bits)* is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5562] The signal u2_1/RAM_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (8 address bits)* is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5562] The signal u2_2/RAM_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (8 address bits)* is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5562] The signal u2_3/RAM_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (8 address bits)* is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5562] The signal u3_0/RAM_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (8 address bits)* is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5562] The signal u3_1/RAM_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (8 address bits)* is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5562] The signal u3_2/RAM_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (8 address bits)* is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5562] The signal u3_3/RAM_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The *depth (8 address bits)* is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM:
++------------+--------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+---------------------+
+|Module Name | RTL Object   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | OUT_REG      | RAMB18 | RAMB36 | Hierarchical Name   | 
++------------+--------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+---------------------+
+|RAM1K_32    | u0_0/RAM_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B | 1      | 0      | RAM1K_32/extram__17 | 
+|RAM1K_32    | u0_1/RAM_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B | 1      | 0      | RAM1K_32/extram__19 | 
+|RAM1K_32    | u0_2/RAM_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B | 1      | 0      | RAM1K_32/extram__21 | 
+|RAM1K_32    | u0_3/RAM_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B | 1      | 0      | RAM1K_32/extram__23 | 
+|RAM1K_32    | u1_0/RAM_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B | 1      | 0      | RAM1K_32/extram__25 | 
+|RAM1K_32    | u1_1/RAM_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B | 1      | 0      | RAM1K_32/extram__27 | 
+|RAM1K_32    | u1_2/RAM_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B | 1      | 0      | RAM1K_32/extram__29 | 
+|RAM1K_32    | u1_3/RAM_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B | 1      | 0      | RAM1K_32/extram__31 | 
+|RAM1K_32    | u2_0/RAM_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B | 1      | 0      | RAM1K_32/extram__33 | 
+|RAM1K_32    | u2_1/RAM_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B | 1      | 0      | RAM1K_32/extram__35 | 
+|RAM1K_32    | u2_2/RAM_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B | 1      | 0      | RAM1K_32/extram__37 | 
+|RAM1K_32    | u2_3/RAM_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B | 1      | 0      | RAM1K_32/extram__39 | 
+|RAM1K_32    | u3_0/RAM_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B | 1      | 0      | RAM1K_32/extram__41 | 
+|RAM1K_32    | u3_1/RAM_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B | 1      | 0      | RAM1K_32/extram__43 | 
+|RAM1K_32    | u3_2/RAM_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B | 1      | 0      | RAM1K_32/extram__45 | 
+|RAM1K_32    | u3_3/RAM_reg | 256 x 8(READ_FIRST)    | W |   | 256 x 8(WRITE_FIRST)   |   | R | Port A and B | 1      | 0      | RAM1K_32/extram__47 | 
++------------+--------------+------------------------+---+---+------------------------+---+---+--------------+--------+--------+---------------------+
+
+Note: The table shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. "Hierarchical Name" reflects the Block RAM name as it appears in the hierarchical module and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 445.953 ; gain = 269.086
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 445.953 ; gain = 269.086
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 445.953 ; gain = 269.086
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 445.953 ; gain = 269.086
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance \u0_0/RAM_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \u0_1/RAM_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \u0_2/RAM_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \u0_3/RAM_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \u1_0/RAM_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \u1_1/RAM_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \u1_2/RAM_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \u1_3/RAM_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \u2_0/RAM_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \u2_1/RAM_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \u2_2/RAM_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \u2_3/RAM_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \u3_0/RAM_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \u3_1/RAM_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \u3_2/RAM_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance \u3_3/RAM_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 446.141 ; gain = 269.273
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 446.141 ; gain = 269.273
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 446.141 ; gain = 269.273
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 446.141 ; gain = 269.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 446.141 ; gain = 269.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 446.141 ; gain = 269.273
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |LUT3     |     8|
+|3     |LUT6     |    32|
+|4     |RAMB18E1 |    16|
+|5     |IBUF     |    44|
+|6     |OBUF     |    32|
++------+---------+------+
+
+Report Instance Areas: 
++------+-----------+------------+------+
+|      |Instance   |Module      |Cells |
++------+-----------+------------+------+
+|1     |top        |            |   133|
+|2     |  mux4_1_u |mux4_1      |    32|
+|3     |  u0_0     |RAM256_8    |     1|
+|4     |  u0_1     |RAM256_8_0  |     1|
+|5     |  u0_2     |RAM256_8_1  |     3|
+|6     |  u0_3     |RAM256_8_2  |     1|
+|7     |  u1_0     |RAM256_8_3  |     1|
+|8     |  u1_1     |RAM256_8_4  |     1|
+|9     |  u1_2     |RAM256_8_5  |     3|
+|10    |  u1_3     |RAM256_8_6  |     1|
+|11    |  u2_0     |RAM256_8_7  |     1|
+|12    |  u2_1     |RAM256_8_8  |     1|
+|13    |  u2_2     |RAM256_8_9  |     3|
+|14    |  u2_3     |RAM256_8_10 |     1|
+|15    |  u3_0     |RAM256_8_11 |     1|
+|16    |  u3_1     |RAM256_8_12 |     1|
+|17    |  u3_2     |RAM256_8_13 |     3|
+|18    |  u3_3     |RAM256_8_14 |     1|
++------+-----------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 446.141 ; gain = 269.273
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 446.141 ; gain = 239.332
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 446.141 ; gain = 269.273
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 60 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 515.297 ; gain = 308.488
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 515.297 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 17 23:58:30 2019...

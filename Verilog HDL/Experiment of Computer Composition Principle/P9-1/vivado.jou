@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sat Nov 16 10:36:19 2019
+# Process ID: 17060
+# Log file: E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-1/vivado.log
+# Journal file: E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-1/P9-1.xpr}
+launch_simulation
+source test_RAM.tcl
+close_sim

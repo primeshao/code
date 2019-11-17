@@ -1,0 +1,7 @@
+Running: xsim.dir/test_ComplementMultiplier_behav/xsimk.exe -simmode gui -wdb test_ComplementMultiplier_behav.wdb -simrunnum 0 -socket 52577
+Design successfully loaded
+Design Loading Memory Usage: 21552 KB (Peak: 21552 KB)
+Design Loading CPU Usage: 202 ms
+Simulation completed
+Simulation Memory Usage: 21988 KB (Peak: 21988 KB)
+Simulation CPU Usage: 202 ms

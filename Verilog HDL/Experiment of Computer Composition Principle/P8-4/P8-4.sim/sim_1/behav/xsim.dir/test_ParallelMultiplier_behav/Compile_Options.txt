@@ -1,0 +1,1 @@
+-wto "32232981b3af4ca5ad01a7376be3c52e" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "test_ParallelMultiplier_behav" "xil_defaultlib.test_ParallelMultiplier" "xil_defaultlib.glbl" -log "elaborate.log" 
