@@ -1,0 +1,359 @@
+
+*** Running vivado
+    with args -log ROM_1M.vds -m64 -mode batch -messageDb vivado.pb -notrace -source ROM_1M.tcl
+
+
+****** Vivado v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source ROM_1M.tcl -notrace
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at E:/Xilinx/Vivado/2015.2/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at E:/Xilinx/Vivado/2015.2/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+Command: synth_design -top ROM_1M -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-1223] The version limit for your license is '2018.08' and will expire in -458 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 279.906 ; gain = 82.730
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ROM_1M' [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/imports/new/ROM_1M.v:1]
+	Parameter ON bound to: 1'b0 
+INFO: [Synth 8-638] synthesizing module 'decode3_8' [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/decode3_8.v:1]
+INFO: [Synth 8-256] done synthesizing module 'decode3_8' (1#1) [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/decode3_8.v:1]
+WARNING: [Synth 8-689] width (4) of port connection 'y' does not match port width (8) of module 'decode3_8' [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/imports/new/ROM_1M.v:18]
+INFO: [Synth 8-638] synthesizing module 'ROM_256_8' [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:1]
+	Parameter WORD_SIZE bound to: 8 - type: integer 
+	Parameter WORD_NUMBER bound to: 256 - type: integer 
+	Parameter Address_SIZE bound to: 8 - type: integer 
+WARNING: [Synth 8-567] referenced signal 'CS_n' should be on the sensitivity list [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:13]
+WARNING: [Synth 8-567] referenced signal 'Address' should be on the sensitivity list [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:13]
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Unable to determine number of words or word size in RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+WARNING: [Synth 8-3848] Net ROM in module/entity ROM_256_8 does not have driver. [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:11]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'ROM_256_8' (2#1) [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/ROM_256_8.v:1]
+INFO: [Synth 8-638] synthesizing module 'mux_4_1' [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/mux_4_1.v:1]
+	Parameter data_width bound to: 32 - type: integer 
+INFO: [Synth 8-226] default block is never used [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/mux_4_1.v:11]
+INFO: [Synth 8-256] done synthesizing module 'mux_4_1' (3#1) [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/new/mux_4_1.v:1]
+INFO: [Synth 8-256] done synthesizing module 'ROM_1M' (4#1) [E:/Program Files_code/WORKSPACE_verilog_Vivado 2015.2/P9-4/P9-4.srcs/sources_1/imports/new/ROM_1M.v:1]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 314.152 ; gain = 116.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 314.152 ; gain = 116.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 314.152 ; gain = 116.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 330.797 ; gain = 133.621
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'u0_0' (ROM_256_8) to 'u0_1'
+INFO: [Synth 8-223] decloning instance 'u0_0' (ROM_256_8) to 'u0_2'
+INFO: [Synth 8-223] decloning instance 'u0_0' (ROM_256_8) to 'u0_3'
+INFO: [Synth 8-223] decloning instance 'u1_0' (ROM_256_8) to 'u1_1'
+INFO: [Synth 8-223] decloning instance 'u1_0' (ROM_256_8) to 'u1_2'
+INFO: [Synth 8-223] decloning instance 'u1_0' (ROM_256_8) to 'u1_3'
+INFO: [Synth 8-223] decloning instance 'u2_0' (ROM_256_8) to 'u2_1'
+INFO: [Synth 8-223] decloning instance 'u2_0' (ROM_256_8) to 'u2_2'
+INFO: [Synth 8-223] decloning instance 'u2_0' (ROM_256_8) to 'u2_3'
+INFO: [Synth 8-223] decloning instance 'u3_0' (ROM_256_8) to 'u3_1'
+INFO: [Synth 8-223] decloning instance 'u3_0' (ROM_256_8) to 'u3_2'
+INFO: [Synth 8-223] decloning instance 'u3_0' (ROM_256_8) to 'u3_3'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module decode3_8 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+Module mux_4_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 458.020 ; gain = 260.844
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 460.172 ; gain = 262.996
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 460.172 ; gain = 262.996
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 469.270 ; gain = 272.094
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 469.270 ; gain = 272.094
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 469.270 ; gain = 272.094
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 469.270 ; gain = 272.094
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 469.270 ; gain = 272.094
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 469.270 ; gain = 272.094
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 469.270 ; gain = 272.094
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 469.270 ; gain = 272.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 469.270 ; gain = 272.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 469.270 ; gain = 272.094
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT3 |     4|
+|2     |LUT6 |    40|
+|3     |IBUF |     3|
+|4     |OBUF |    32|
++------+-----+------+
+
+Report Instance Areas: 
++------+-----------+--------+------+
+|      |Instance   |Module  |Cells |
++------+-----------+--------+------+
+|1     |top        |        |    79|
+|2     |  mux4_1_u |mux_4_1 |    44|
++------+-----------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 469.270 ; gain = 272.094
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 259 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 469.270 ; gain = 242.023
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 469.270 ; gain = 272.094
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 535.328 ; gain = 308.082
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.128 . Memory (MB): peak = 535.328 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 02 00:22:37 2019...
