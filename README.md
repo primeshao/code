@@ -19,7 +19,7 @@
 
 # 项目一览
 ## 第一部分 C
-		1	C Experiment
+		1	[C Experiment](https://github.com/primeshao/code/tree/master/C/C%20Experiment)
 		2	Practical Training
 		3	C Student Book
 		4	Data structure
